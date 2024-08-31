@@ -10,9 +10,9 @@ public class PoolistaApplication {
 		SpringApplication.run(PoolistaApplication.class, args);
 
 		//Exercicio1.resolucao();
-		Exercicio2.resolucao();
+		//Exercicio2.resolucao();
+		Exercicio3.resolucao();
 
 		
 	}
-
 }
