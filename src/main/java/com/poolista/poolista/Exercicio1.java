@@ -9,15 +9,18 @@ public class Exercicio1 {
         
         int n1, n2;
 
-        System.out.print("Digite o primeiro numero: ");
+        System.out.println("\n------------------------------------------------------\n");
+        System.out.print("Digite o primeiro número: ");
         Scanner scanner = new Scanner(System.in);
         n1 = scanner.nextInt(); // leia o próximo inteiro
 
-        System.out.println("Digite o segundo numero: ");
+        System.out.print("Digite o segundo número: ");
         n2 = scanner.nextInt();
 
-        System.out.println("A soma é = "+(n1+n2));
+        System.out.print("\nA soma dos valores é igual a "+(n1+n2)+".\n");
+        System.out.println("\n------------------------------------------------------\n");
 
+        scanner.close(); 
     }
         
 }

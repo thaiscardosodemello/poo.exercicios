@@ -9,16 +9,19 @@ public class Exercicio2 {
 
         String nome, sobrenome;
 
-        System.out.println("Digite seu nome: ");
+        System.out.println("\n------------------------------------------------------\n");
+        System.out.print("Digite seu nome: ");
         Scanner scanner = new Scanner(System.in);
         nome = scanner.nextLine();
 
-        System.out.println("Digite seu sobrenome: ");
+        System.out.print("Digite seu sobrenome: ");
         sobrenome = scanner.nextLine();
 
+        System.out.println("\n------------------------------------------------------\n");
         System.out.println("Olá, "+ nome +" "+sobrenome + "!");
+        System.out.println("\n------------------------------------------------------\n");
 
-
+        scanner.close(); 
     }
 
 }
