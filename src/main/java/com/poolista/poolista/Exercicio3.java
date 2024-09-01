@@ -7,7 +7,7 @@ public class Exercicio3 {
         //3) Escreva uma calculadora que receba um valor em reais e converta para dólar. Considere o valor do dólar a R$5,25.
 
         System.out.println("\n------------------------------------------------------\n");
-        System.out.println("                Calculadora Financeira");
+        System.out.println("                Conversor de Reais para Dólares");
         System.out.println("\n------------------------------------------------------\n");
 
         System.out.print("Digite o valor em reais (R$): ");
@@ -26,7 +26,7 @@ public class Exercicio3 {
         %n >> passa para a próxima linha (equivalente ao println()). */
 
         System.out.println("\n------------------------------------------------------\n");
-        scanner.close();         
+        // scanner.close();         
     }
 
 }

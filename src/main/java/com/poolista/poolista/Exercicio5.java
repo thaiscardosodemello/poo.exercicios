@@ -23,6 +23,6 @@ public class Exercicio5 {
         System.out.printf("\nO valor total do terreno é R$ %.2f.\n", valorTotal);
 
         System.out.println("\n------------------------------------------------------\n");
-        scanner.close();      
+        // scanner.close();      
     }
 }

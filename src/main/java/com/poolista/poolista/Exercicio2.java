@@ -21,7 +21,7 @@ public class Exercicio2 {
         System.out.println("Olá, "+ nome +" "+sobrenome + "!");
         System.out.println("\n------------------------------------------------------\n");
 
-        scanner.close(); 
+        // scanner.close(); 
     }
 
 }

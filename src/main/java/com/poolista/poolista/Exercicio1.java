@@ -20,7 +20,7 @@ public class Exercicio1 {
         System.out.print("\nA soma dos valores é igual a "+(n1+n2)+".\n");
         System.out.println("\n------------------------------------------------------\n");
 
-        scanner.close(); 
+        // scanner.close(); 
     }
         
 }

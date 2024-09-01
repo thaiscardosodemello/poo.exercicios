@@ -20,7 +20,7 @@ public class Exercicio4 {
         System.out.println("\nO número digitado " +num+ " possui como antecessor o número "+numAntecessor+" e como sucessor o número " +numSucessor+".");
 
         System.out.println("\n------------------------------------------------------\n");
-        scanner.close(); 
+        // scanner.close(); 
     }
 
 }
