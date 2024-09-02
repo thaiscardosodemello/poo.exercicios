@@ -13,7 +13,7 @@ public class PoolistaApplication {
 
         do {
             System.out.println("\n=============================================\n");
-            System.out.println("          MENU LISTA DE EXERCÍCIOS");
+            System.out.println("          MENU LISTA 1 DE EXERCÍCIOS");
             System.out.println("\n=============================================\n");
             System.out.println("1) Soma entre 2 números");
             System.out.println("2) Olá, Usuário!");
