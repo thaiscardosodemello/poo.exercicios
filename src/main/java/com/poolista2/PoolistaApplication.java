@@ -22,7 +22,7 @@ public class PoolistaApplication {
 			System.out.println("5) Validador de Login e Senha");
 			System.out.println("6) Aprovado ou Reprovado");
 			System.out.println("7) Identificador de Divisibilidade");
-			System.out.println("8) Jogo de Perguntas e Respostas");
+			System.out.println("8) Jogo de Perguntas e Respostas: League Of Legends Quiz");
 			System.out.println("9) Sair");
 
             System.out.print("\nEscolha um exercício: ");
@@ -60,7 +60,7 @@ public class PoolistaApplication {
 					Exercicio7.resolucao();
                     break;
 				case "8":
-				//	Exercicio8.resolucao();
+					Exercicio8.resolucao();
                     break;
                 default:
                     System.out.println("Opção inválida. Por favor, escolha novamente.");
