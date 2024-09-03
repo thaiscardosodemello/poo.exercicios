@@ -1,4 +1,4 @@
-package com.poolista2;
+package com.poolista3;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -15,23 +15,22 @@ public class PoolistaApplication {
 
         do {
             System.out.println("\n=============================================\n");
-            System.out.println("          MENU LISTA 2 DE EXERCÍCIOS");
+            System.out.println("          MENU LISTA 3 DE EXERCÍCIOS");
             System.out.println("\n=============================================\n");
-            System.out.println("1) Verificador de Paridade");
-            System.out.println("2) Comparador de Números");
-            System.out.println("3) Encaminhamento de Clientes para Filas");
-            System.out.println("4) Verificador de Idade para Eventos");
-			System.out.println("5) Validador de Login e Senha");
-			System.out.println("6) Aprovado ou Reprovado");
-			System.out.println("7) Identificador de Divisibilidade");
-			System.out.println("8) Jogo de Perguntas e Respostas: League Of Legends Quiz");
-			System.out.println("9) Sair");
+            System.out.println("1) Cronômetro");
+            System.out.println("2) Tabuada");
+            System.out.println("3) Números Pares");
+            System.out.println("4) Jogo da Adivinhação");
+			System.out.println("5) Validação de Login");
+			System.out.println("6) Pirâmide de Asteriscos");
+			System.out.println("7) Retângulo de Asteriscos");
+			System.out.println("8) Sair");
 
             System.out.print("\nEscolha um exercício: ");
 			opcao = scanner.nextLine(); 
 
             //encerra o loop do menu
-            if ("9".equals(opcao)) { 
+            if ("8".equals(opcao)) { 
                 System.out.println("Saindo...");
                 break; 
             }
@@ -41,32 +40,29 @@ public class PoolistaApplication {
 					Exercicio1.resolucao();
                     break;
                 case "2":
-					Exercicio2.resolucao();
+					//Exercicio2.resolucao();
                     break;
                 case "3":
-					Exercicio3.resolucao();
+					//Exercicio3.resolucao();
                     break;
 				case "4":
-					Exercicio4.resolucao();
+					//Exercicio4.resolucao();
                     break;
 				case "5":
-					Exercicio5.resolucao();
+					//Exercicio5.resolucao();
                     break;
 				case "6":
-					Exercicio6.resolucao();
+					//Exercicio6.resolucao();
                     break;
 				case "7":
-					Exercicio7.resolucao();
-                    break;
-				case "8":
-					Exercicio8.resolucao();
+					//Exercicio7.resolucao();
                     break;
                 default:
                     System.out.println("Opção inválida. Por favor, escolha novamente.");
                     break;
             }
 			
-        } while (!"9".equals(opcao));
+        } while (!"8".equals(opcao)); 
 
         scanner.close();
     }
