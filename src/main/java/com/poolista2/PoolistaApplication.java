@@ -16,7 +16,7 @@ public class PoolistaApplication {
             System.out.println("          MENU LISTA 2 DE EXERCÍCIOS");
             System.out.println("\n=============================================\n");
             System.out.println("1) Verificador de Paridade");
-           /System.out.println("2) Comparador de Números");
+            System.out.println("2) Comparador de Números");
             System.out.println("3) Encaminhamento de Clientes para Filas");
             System.out.println("4) Verificador de Idade para Eventos");
 			System.out.println("5) Validador de Login e Senha");
