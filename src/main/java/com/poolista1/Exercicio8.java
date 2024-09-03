@@ -20,7 +20,6 @@ public class Exercicio8 {
 
         System.out.printf("\nA temperatura em Celsius é: %.2f°C%n", temperaturaCelsius);
         System.out.println("\n------------------------------------------------------\n");
-        // scanner.close(); 
     }
 
 }

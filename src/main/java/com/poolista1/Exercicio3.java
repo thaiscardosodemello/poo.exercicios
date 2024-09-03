@@ -25,8 +25,7 @@ public class Exercicio3 {
         %.2f >> pega o argumento e imprime com 2 casas depois da vírgula
         %n >> passa para a próxima linha (equivalente ao println()). */
 
-        System.out.println("\n------------------------------------------------------\n");
-        // scanner.close();         
+        System.out.println("\n------------------------------------------------------\n");        
     }
 
 }

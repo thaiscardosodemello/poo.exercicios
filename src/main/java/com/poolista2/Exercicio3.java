@@ -34,8 +34,5 @@ public class Exercicio3 {
             System.out.println("         SIGA PARA A FILA COMUM");
             System.out.println("\n+--------------------------------------+\n");
         }
-        
-
-        // scanner.close(); 
     }
 }

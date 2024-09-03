@@ -28,9 +28,6 @@ public class Exercicio4 {
             System.out.println("        Pode entrar no evento normalmente.");
             System.out.println("\n+------------------------------------------------+\n");
         }
-        
-
-        // scanner.close(); 
     }
 
 }

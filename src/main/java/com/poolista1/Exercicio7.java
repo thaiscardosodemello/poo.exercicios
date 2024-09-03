@@ -28,7 +28,6 @@ public class Exercicio7 {
 
         System.out.printf("\nA média das notas é %.2f.%n", media);
         System.out.println("\n------------------------------------------------------\n");
-        // scanner.close(); 
     }
 
 }

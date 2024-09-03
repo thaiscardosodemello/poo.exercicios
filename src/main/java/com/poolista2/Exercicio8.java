@@ -69,7 +69,6 @@ public class Exercicio8 {
             }
         }
         
-        // Resultado final
         System.out.println("Você acertou " +acertos+ " de " +totalPerguntas+ " perguntas.");
     }
 }

@@ -11,6 +11,8 @@ public class PoolistaApplication {
 		SpringApplication.run(PoolistaApplication.class, args);
         String opcao;
 
+        Scanner scanner = new Scanner(System.in);
+
         do {
             System.out.println("\n=============================================\n");
             System.out.println("          MENU LISTA 1 DE EXERCÍCIOS");
@@ -26,10 +28,7 @@ public class PoolistaApplication {
 			System.out.println("9) Sair");
 
             System.out.print("\nEscolha um exercício: ");
-            
-		    Scanner scanner = new Scanner(System.in);
 			opcao = scanner.nextLine(); // Lê a opção como uma string
-            // // scanner.close(); // Fechar o scanner
 
             //encerra o loop do menu
             if ("9".equals(opcao)) { 
@@ -68,6 +67,8 @@ public class PoolistaApplication {
             }
 			
         } while (!"9".equals(opcao)); 
+
+        scanner.close();
 
 	}
 }

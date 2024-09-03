@@ -20,11 +20,6 @@ public class Exercicio2 {
         } else if (num2 > num1) {
             System.out.println("\nO segundo número ("+num2+") é o maior!");
         }
-        System.out.println("\n------------------------------------------------------\n");
-
-        // scanner.close(); 
-
-
-        
+        System.out.println("\n------------------------------------------------------\n");  
     }
 }

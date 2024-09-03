@@ -25,7 +25,5 @@ public class Exercicio6 {
 
         System.out.printf("\nO consumo médio do veículo é %.2f km/l%n", consumoMedio);
         System.out.println("\n------------------------------------------------------\n");
-        // scanner.close(); 
     }
-
 }

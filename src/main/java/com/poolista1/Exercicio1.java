@@ -18,9 +18,7 @@ public class Exercicio1 {
         n2 = scanner.nextInt();
 
         System.out.print("\nA soma dos valores é igual a "+(n1+n2)+".\n");
-        System.out.println("\n------------------------------------------------------\n");
-
-        
+        System.out.println("\n------------------------------------------------------\n");  
     }
         
 }

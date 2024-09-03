@@ -23,6 +23,5 @@ public class Exercicio1 {
         }
         System.out.println("\n------------------------------------------------------\n");
 
-        // scanner.close(); 
     }
 }
