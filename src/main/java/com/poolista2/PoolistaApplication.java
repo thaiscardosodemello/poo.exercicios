@@ -51,7 +51,7 @@ public class PoolistaApplication {
 					Exercicio4.resolucao();
                     break;
 				case "5":
-				//	Exercicio5.resolucao();
+					Exercicio5.resolucao();
                     break;
 				case "6":
 				//	Exercicio6.resolucao();
