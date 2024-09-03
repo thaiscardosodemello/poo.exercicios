@@ -31,10 +31,10 @@ public class PoolistaApplication {
 			opcao = scanner.nextLine(); // Lê a opção como uma string
             // // scanner.close(); // Fechar o scanner
 
-            // Verifica se a opção é para sair
-            if ("9".equals(opcao)) { // Correção: Verifica se a opção é "9"
+            //encerra o loop do menu
+            if ("9".equals(opcao)) { 
                 System.out.println("Saindo...");
-                break; // Encerra o loop se a opção for "9"
+                break;
             }
             
             switch (opcao) {
@@ -67,7 +67,7 @@ public class PoolistaApplication {
                     break;
             }
 			
-        } while (!"9".equals(opcao)); // Correção: Loop até que a opção 9 seja escolhida
+        } while (!"9".equals(opcao)); 
 
 	}
 }

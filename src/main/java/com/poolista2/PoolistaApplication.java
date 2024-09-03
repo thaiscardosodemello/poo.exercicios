@@ -28,13 +28,13 @@ public class PoolistaApplication {
             System.out.print("\nEscolha um exercício: ");
             
 		    Scanner scanner = new Scanner(System.in);
-			opcao = scanner.nextLine(); // Lê a opção como uma string
+			opcao = scanner.nextLine(); 
             // // scanner.close(); // Fechar o scanner
 
-            // Verifica se a opção é para sair
-            if ("9".equals(opcao)) { // Correção: Verifica se a opção é "9"
+            //encerra o loop do menu
+            if ("9".equals(opcao)) { 
                 System.out.println("Saindo...");
-                break; // Encerra o loop se a opção for "9"
+                break; 
             }
             
             switch (opcao) {
@@ -45,7 +45,7 @@ public class PoolistaApplication {
 					Exercicio2.resolucao();
                     break;
                 case "3":
-				//	Exercicio3.resolucao();
+					Exercicio3.resolucao();
                     break;
 				case "4":
 				//	Exercicio4.resolucao();
