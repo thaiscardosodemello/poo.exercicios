@@ -1,4 +1,4 @@
-package com.poolista.poolista;
+package com.poolista1;
 
 import java.util.Scanner;
 

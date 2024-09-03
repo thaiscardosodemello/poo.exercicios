@@ -1,4 +1,4 @@
-package com.poolista.poolista;
+package com.poolista2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -16,7 +16,7 @@ public class PoolistaApplication {
             System.out.println("          MENU LISTA 2 DE EXERCÍCIOS");
             System.out.println("\n=============================================\n");
             System.out.println("1) Verificador de Paridade");
-            System.out.println("2) Comparador de Números");
+           /System.out.println("2) Comparador de Números");
             System.out.println("3) Encaminhamento de Clientes para Filas");
             System.out.println("4) Verificador de Idade para Eventos");
 			System.out.println("5) Validador de Login e Senha");
@@ -42,25 +42,25 @@ public class PoolistaApplication {
 					Exercicio1.resolucao();
                     break;
                 case "2":
-					//Exercicio2.resolucao();
+				//	Exercicio2.resolucao();
                     break;
                 case "3":
-					//Exercicio3.resolucao();
+				//	Exercicio3.resolucao();
                     break;
 				case "4":
-					//Exercicio4.resolucao();
+				//	Exercicio4.resolucao();
                     break;
 				case "5":
-					//Exercicio5.resolucao();
+				//	Exercicio5.resolucao();
                     break;
 				case "6":
-					//Exercicio6.resolucao();
+				//	Exercicio6.resolucao();
                     break;
 				case "7":
-					//Exercicio7.resolucao();
+				//	Exercicio7.resolucao();
                     break;
 				case "8":
-					//Exercicio8.resolucao();
+				//	Exercicio8.resolucao();
                     break;
                 default:
                     System.out.println("Opção inválida. Por favor, escolha novamente.");
