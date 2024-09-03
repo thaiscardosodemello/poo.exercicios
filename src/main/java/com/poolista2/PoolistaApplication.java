@@ -42,7 +42,7 @@ public class PoolistaApplication {
 					Exercicio1.resolucao();
                     break;
                 case "2":
-				//	Exercicio2.resolucao();
+					Exercicio2.resolucao();
                     break;
                 case "3":
 				//	Exercicio3.resolucao();
