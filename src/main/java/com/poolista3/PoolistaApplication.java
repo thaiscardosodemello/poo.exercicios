@@ -14,9 +14,9 @@ public class PoolistaApplication {
         Scanner scanner = new Scanner(System.in);
 
         do {
-            System.out.println("\n=============================================\n");
-            System.out.println("          MENU LISTA 3 DE EXERCÍCIOS");
-            System.out.println("\n=============================================\n");
+            System.out.println("\n---------------------------------------------\n");
+            System.out.println("         LISTA 3 | Laços e Repetição");
+            System.out.println("\n---------------------------------------------\n");
             System.out.println("1) Cronômetro");
             System.out.println("2) Tabuada");
             System.out.println("3) Números Pares");
@@ -46,16 +46,16 @@ public class PoolistaApplication {
 					Exercicio3.resolucao();
                     break;
 				case "4":
-					Exercicio4.resolucao(); // finalizar
+					Exercicio4.resolucao(); 
                     break;
 				case "5":
-					//Exercicio5.resolucao();
+					Exercicio5.resolucao();// finalizar
                     break;
 				case "6":
-					//Exercicio6.resolucao();
+					Exercicio6.resolucao();
                     break;
 				case "7":
-					//Exercicio7.resolucao();
+					Exercicio7.resolucao();
                     break;
                 default:
                     System.out.println("Opção inválida. Por favor, escolha novamente.");

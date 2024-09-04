@@ -14,9 +14,9 @@ public class PoolistaApplication {
         Scanner scanner = new Scanner(System.in);
 
         do {
-            System.out.println("\n=============================================\n");
-            System.out.println("          MENU LISTA 1 DE EXERCÍCIOS");
-            System.out.println("\n=============================================\n");
+            System.out.println("\n---------------------------------------------\n");
+            System.out.println("       LISTA 1 | Operações Matemáticas");
+            System.out.println("\n---------------------------------------------\n");
             System.out.println("1) Soma entre 2 números");
             System.out.println("2) Olá, Usuário!");
             System.out.println("3) Converter reais para dólares");
