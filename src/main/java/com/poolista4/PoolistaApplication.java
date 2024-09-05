@@ -37,7 +37,7 @@ public class PoolistaApplication {
             
             switch (opcao) {
                 case "1":
-					Exercicio1.resolucao(); //finalizar
+					//Exercicio4.resolucao(); //finalizar
                     break;
                 case "2":
 					//Exercicio2.resolucao();
@@ -46,7 +46,7 @@ public class PoolistaApplication {
 					//Exercicio3.resolucao();
                     break;
 				case "4":
-					//Exercicio4.resolucao(); 
+					Exercicio4.resolucao(); 
                     break;
 				case "5":
 					//Exercicio5.resolucao();
