@@ -12,7 +12,6 @@ public class Exercicio1 {
         for (double venda : vendasDoDia) {
             soma += venda;
         }
-        System.out.printf("\nO fechamento do dia é de R$%.2f.\n", soma);
-        
+        System.out.printf("\nO fechamento do dia é de R$%.2f.\n", soma);        
     }
 }

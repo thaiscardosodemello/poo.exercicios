@@ -23,7 +23,7 @@ public class Exercicio2 {
                 maior = venda;
             }
         }
-        System.out.printf("/nCompra de menor valor: R$%.2f.\n", menor);
+        System.out.printf("\nCompra de menor valor: R$%.2f.\n", menor);
         System.out.printf("Compra de maior valor: R$%.2f.\n", maior);
     }
 }

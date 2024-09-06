@@ -7,11 +7,11 @@ import java.util.Scanner;
 @SpringBootApplication
 public class PoolistaApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(PoolistaApplication.class, args);
-        
-        String opcao;
+    public static void main(String[] args) {
+        SpringApplication.run(PoolistaApplication.class, args);
+
         Scanner scanner = new Scanner(System.in);
+        String opcao;
 
         do {
             System.out.println("\n---------------------------------------------\n");
@@ -25,49 +25,50 @@ public class PoolistaApplication {
             System.out.println("6) Lista de Compras - Remover Item");
             System.out.println("7) Lista de Compras - Adicionar Preço");
             System.out.println("8) Lista de Compras - Ordenar por Preço");
-			System.out.println("9) Sair");
+            System.out.println("9) Sair");
 
             System.out.print("\nEscolha um exercício: ");
-			opcao = scanner.nextLine(); 
+            opcao = scanner.nextLine();
 
-            //encerra o loop do menu
-            if ("9".equals(opcao)) { 
+            // Encerra o loop do menu
+            if ("9".equals(opcao)) {
                 System.out.println("Saindo...");
-                break; 
+                break;
             }
-            
+
             switch (opcao) {
                 case "1":
-					Exercicio1.resolucao();
+                    Exercicio1.resolucao();
                     break;
                 case "2":
-					Exercicio2.resolucao();
+                    Exercicio2.resolucao();
                     break;
                 case "3":
-					Exercicio3.resolucao();
+                    Exercicio3.resolucao();
                     break;
-				case "4":
-					Exercicio4.resolucao(); 
+                case "4":
+                    Exercicio4.resolucao();
                     break;
-				case "5":
-					Exercicio5.resolucao();
+                case "5":
+                    Exercicio5.resolucao();
                     break;
-				case "6":
-					Exercicio6.resolucao(); //finalizar
+                case "6":
+                    Exercicio6.resolucao();// finalizar
                     break;
-				case "7":
-					//Exercicio7.resolucao();
+                case "7":
+                    // Exercicio7.resolucao(); // Implementar o método no exercício 7
                     break;
                 case "8":
-					//Exercicio8.resolucao();
+                    // Exercicio8.resolucao(); // Implementar o método no exercício 8
                     break;
                 default:
                     System.out.println("Opção inválida. Por favor, escolha novamente.");
                     break;
             }
-			
-        } while (!"9".equals(opcao)); 
 
+        } while (!"9".equals(opcao));
+
+        // Fechar o scanner após terminar de usar
         scanner.close();
     }
 }
