@@ -59,7 +59,7 @@ public class PoolistaApplication {
                     Exercicio7.resolucao();
                     break;
                 case "8":
-                    // Exercicio8.resolucao(); // Implementar o método no exercício 8
+                    Exercicio8.resolucao();
                     break;
                 default:
                     System.out.println("Opção inválida. Por favor, escolha novamente.");
