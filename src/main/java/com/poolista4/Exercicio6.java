@@ -1,6 +1,6 @@
 package com.poolista4;
 
-import java.util.ArrayList; //Usado para criar listas dinâmicas
+import java.util.ArrayList; // Usado para criar listas dinâmicas
 import java.util.Scanner;
 
 public class Exercicio6 {
@@ -27,7 +27,7 @@ public class Exercicio6 {
                     // Adiciona item à lista
                     System.out.print("\nAdicione um item (ou mais itens separados por vírgulas): ");
                     String itens = scanner.nextLine();
-                    String[] itensArray = itens.split(",\\s*"); //Divide a string por vírgulas e espaços
+                    String[] itensArray = itens.split(",\\s*"); // Divide a string por vírgulas e espaços
                     for (String item : itensArray) {
                         listaDeCompras.add(item);
                     }
@@ -45,17 +45,32 @@ public class Exercicio6 {
                     break;
                 case "3":
                     // Remove item da lista
-                    System.out.print("\nDigite o número do item a ser removido: ");
-                    String input = scanner.nextLine();
-                    
-                    int itemIndex = -1; // Converte a entrada para um número
-                    
-                    // Verifica se o index é válido
-                    if (itemIndex >= 0 && itemIndex < listaDeCompras.size()) {
-                        listaDeCompras.remove(itemIndex);
-                        System.out.println("Item removido com sucesso.");
+                    System.out.println("\nRemover item da lista:");
+                    if (listaDeCompras.isEmpty()) {
+                        System.out.println("\nLista vazia.");
                     } else {
-                        System.out.println("Número do item inválido.");
+                        // Exibe a lista atual
+                        for (int i = 0; i < listaDeCompras.size(); i++) {
+                            System.out.println((i + 1) + " - " + listaDeCompras.get(i));
+                        }
+                        System.out.print("\nQual item deseja remover? ");
+                        int remocao;
+                        //TRYCATCH permite executar o código e enquanto lida com alguma exceção sem interromper o programa
+                        //TRY converte a entrada do usuário(STRING), para INT usando Integer.parseInt(). 
+                        try {
+                            //(remoção = captura)/ (Integer.parseInt(scanner.nextLine()) - 1; = processa)
+                            remocao = Integer.parseInt(scanner.nextLine()) - 1; //integer converse a entrada int em string e -1 subtrai 1 do valor inteiro da conversão
+                            if (remocao < 0 || remocao >= listaDeCompras.size()) { //|| é o mesmo que "ou"
+                                System.out.println("Opção não existe na lista.");
+                            } else {
+                                listaDeCompras.remove(remocao);// remove a string recebida da lin62
+                                System.out.println("Item removido da lista.");
+                            }
+                        //CATCH captura a exceção (e)
+                        } catch (NumberFormatException e) { 
+                            System.out.println("\nEntrada inválida. Por favor, insira um número.");
+                        }
+                        //NumberFormatException é uma classe que estende das classes IllegalArgumentException > RuntimeException > Throwable
                     }
                     break;
                 case "4":
