@@ -18,7 +18,7 @@ public class Exercicio5 {
             System.out.println("\n+------------------------+");
             System.out.println("     LISTA DE COMPRAS");
             System.out.println("+------------------------+");
-            System.out.println("(1) Inserir item na lista");
+            System.out.println("(1) Adiciona item na lista");
             System.out.println("(2) Ver lista de compras");
             System.out.println("(3) Sair");
             System.out.print("\nEscolha uma opção: ");
