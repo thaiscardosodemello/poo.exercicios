@@ -1,12 +1,14 @@
 package com.poolista4;
 
 import java.util.ArrayList; // Usado para criar listas dinâmicas
+import java.util.Collections; // Usado para ordenar listas
+import java.util.Comparator; // Usado para definir a ordem de ordenação
+import java.util.List;
 import java.util.Scanner;
 
 public class Exercicio8 {
     public static void resolucao() {
-        //8) Aproveite os códigos anteriores e implemente a função de impressão por ordem de preço (crescente)
-
+        //8) Aproveite os códigos anteriores e implemente a função de impressão por ordem de preço (crescente).
 
         // Constrói a lista de compras e lista de preços
         ArrayList<String> listaDeCompras = new ArrayList<>();
@@ -14,7 +16,6 @@ public class Exercicio8 {
         Scanner scanner = new Scanner(System.in);
         
         String opcao;
-        double valor;
 
         do {
             System.out.println("\n+------------------------+");
@@ -23,7 +24,8 @@ public class Exercicio8 {
             System.out.println("(1) Adicionar item na lista");
             System.out.println("(2) Ver lista de compras");
             System.out.println("(3) Remover item da lista");
-            System.out.println("(4) Sair");
+            System.out.println("(4) Ver lista de compras por ordem de preço");
+            System.out.println("(5) Sair");
             System.out.print("\nEscolha uma opção: ");
             opcao = scanner.nextLine(); 
 
@@ -46,7 +48,7 @@ public class Exercicio8 {
                         }
                     } 
                     break;
-                case "2":
+                    case "2":
                     // Vê lista
                     System.out.println("\nLista de Compras:");
                     if (listaDeCompras.isEmpty()) {
@@ -57,7 +59,7 @@ public class Exercicio8 {
                         }
                     }
                     break;
-                case "3":
+                    case "3":
                     // Remove item da lista
                     System.out.println("\nRemover item da lista:");
                     if (listaDeCompras.isEmpty()) {
@@ -88,13 +90,51 @@ public class Exercicio8 {
                     }
                     break;
                 case "4":
+                    // Exibe lista ordenada por preço
+                    System.out.println("\nLista de Compras Ordenada por Preço:");
+                    // Lista que combina itens com preços
+                    List<Item> itensComPrecos = new ArrayList<>();
+                    for (int i = 0; i < listaDeCompras.size(); i++) {
+                        //Para cada item, um novo objeto item(item+preço) é criado
+                        itensComPrecos.add(new Item(listaDeCompras.get(i), listaDePrecos.get(i)));
+                    }
+                    
+                    // Ordena a lista por preço
+                    Collections.sort(itensComPrecos, Comparator.comparingDouble(Item::getPreco));/*DOIS PONTOS DOIS PONTOS Compara dois objetos */
+
+                    // Exibe a lista ordenada
+                    for (int i = 0; i < itensComPrecos.size(); i++) {
+                        Item item = itensComPrecos.get(i);
+                        System.out.printf("%d - %s    R$ %.2f%n", (i + 1), item.getNome(), item.getPreco());
+                    }
+                    break;
+
+                case "5":
                     System.out.println("Saindo...");
                     break;
+
                 default:
                     System.out.println("Opção inválida. Por favor, escolha novamente.");
                     break;
             }
             
-        } while (!"4".equals(opcao));
+        } while (!"5".equals(opcao));
+    }
+
+    //Armazenar o item e seu preço
+    private static class Item {
+        private final String nome;
+        private final double preco;
+
+        public Item(String nome, double preco) {
+            this.nome = nome;
+            this.preco = preco;
+        }
+        public String getNome() {
+            return nome;
+        }
+        public double getPreco() {
+            return preco;
+        }
     }
 }
