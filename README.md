@@ -81,3 +81,13 @@
   </ol>
   </br>
 </details>
+
+</br>
+
+## ✨ Tecnologia Utilizada
+
+Para o desenvolvimento dos projetos, foram utilizadas as seguintes ferramentas:
+
+🟣 **[VSCode](https://code.visualstudio.com)** [Documentação](https://code.visualstudio.com/docs)</br>
+🟣 **[Spring Boot Extension Pack](https://marketplace.visualstudio.com/items?itemName=vmware.vscode-boot-dev-pack)**</br>
+🟣 **[Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)**</br>
